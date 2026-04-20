@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-500: #d4af37;
+  --color-gold-400: #f3e5ab;
+  --color-amber-500: #ffbf00;
+}
+
+@layer utilities {
+  .wow-glow {
+    box-shadow: 0 0 40px rgba(255, 191, 0, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.2);
+    border-color: #d4af37;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
